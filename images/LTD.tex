@@ -8,7 +8,7 @@
         \coordinate [right = 4 of GV17] (right_nipple);
         \draw[step=1,gray,very thin] (-7,-4) grid (7,4);
         \node at (GV17) {GV17};
-        \draw [color=red] (left_nipple) circle (1);
-        \draw [color=red] (right_nipple) circle (1);
+        \filldraw[even odd rule,inner color = purple,outer color = white] (left_nipple) circle (1);
+        \draw [color=purple] (right_nipple) circle (1);
     \end{tikzpicture}
 \end{document}
